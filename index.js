@@ -12,7 +12,7 @@ app.get("/about", function (req, res) {
 });
 app.get('/users', function (req, res) {
     res.json({ 
-   "employees":[
+   "Users":[
   {id: "1", ime:"Mario", prezime :"Manic"},
   {id: "2", ime:"Mladen", prezime :"Bakic"},
   {id: "3", ime:"Alen", prezime :"Pakic"},
