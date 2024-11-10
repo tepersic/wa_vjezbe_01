@@ -1,9 +1,18 @@
-const express = require("express");
-const app = express();
-const path = require('path');
 
+import express from 'express'; // umjesto const express = require('express');
+import object from 'module'; // umjesto const object = require('module');
+// odnosno
+const app = express();
+import module from 'path'
+//const path = require('path');
+app.use(express.json());
+const router = express.Router();
+module.exports = router;
+import pizzeRouter from './routes/pizze.js';
+app.use(pizzeRouter);
 
 const PORT = 3000;
+
 app.get("/", function (req, res) {
     res.send("<h1>Hello Express</h1>");
 });
